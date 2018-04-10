@@ -32,15 +32,19 @@ li {
   margin-top: 25px;
 }
 
+.Buttons {
+  margin: 0 auto;
+  width: 380px;
+}
+
 ul {
   list-style: none;
-  margin: 0 auto;
-  width: 40%;
 }
 
 .circle-btn {
   border: 1px solid #000;
-  padding: 50px;
+  width: 120px;
+  height: 120px;
   border-radius: 35px;
   margin: 0 25px;
   font-size: 25px;
@@ -63,4 +67,23 @@ ul {
 
 .Timer span {
   font-size: 75px;
+}
+
+/* remove annoying outline */
+button:focus {outline:0;}
+
+.VideoBox{
+  width: 320px;
+  height: 245px;
+}
+
+@media only screen and (max-width: 700px) {
+.Buttons { width: 300px; }
+.circle-btn { 
+  height: 200px;
+  width: 200px; 
+} }
+
+a {
+  color: #000;
 }
