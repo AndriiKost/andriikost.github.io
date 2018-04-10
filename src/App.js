@@ -45,7 +45,7 @@ startTime = (action) => {
       if (this.state.minutes === 45) {
         this.setState({chill: true})
       }
-    }, 1)
+    }, 1000)
 }
 
 stopTime = () => {
@@ -67,12 +67,12 @@ stopTime = () => {
         <h2> Best Timer For Study </h2>
         <p>It will help you to track time, concentrate and take a breaks</p>
         <div className="Timer">
-          <span>{this.state.hours}:{this.state.minutes}:{this.state.seconds}</span>
+          <span>{this.state.hours.toString().length === 1 ? '0' + this.state.hours : this.state.hours}:{this.state.minutes.toString().length === 1 ? '0' + this.state.minutes : this.state.minutes}:{this.state.seconds.toString().length === 1 ? '0' + this.state.seconds : this.state.seconds}</span>
+        </div>
           <ul>
             <li><button className="circle-btn" onClick={this.state.timer ? null : this.startTime}>START</button></li>
             <li><button className="circle-btn" onClick={this.stopTime}>STOP</button></li>
           </ul>
-        </div>
         {this.state.chill ? videoPlayer : null}
         {this.state.motivation ? motivationVideo : null}
       </div>

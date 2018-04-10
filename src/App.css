@@ -34,16 +34,33 @@ li {
 
 ul {
   list-style: none;
-  margin-left: 40%;
+  margin: 0 auto;
+  width: 40%;
 }
 
 .circle-btn {
-  border: 1px solid #ffd700;
-  padding: 25px 25px;
-  border-radius: 25px;
+  border: 1px solid #000;
+  padding: 50px;
+  border-radius: 35px;
+  margin: 0 25px;
+  font-size: 25px;
 }
 .circle-btn:hover {
   color: #fff;
-  background-color: #ffd700;
+  background-color: #000;
   cursor: pointer;
+}
+
+.Timer {
+  display: block;
+  border: 1px solid #000;
+  margin: 50px auto;
+  width: 100%; 
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.Timer span {
+  font-size: 75px;
 }
