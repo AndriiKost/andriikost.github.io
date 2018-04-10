@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+// import MusicPlayer from './components/MusicPlayer';
+
 let interval;
 
 class App extends Component {
@@ -8,11 +10,12 @@ class App extends Component {
       hours: 0,
       minutes: 0,
       seconds: 0,
-      timer: false
+      timer: false,
+      chill: false,
+      motivation: false
   }
 
 startTime = (action) => {
-
   this.setState({timer: true})
   
     interval = setInterval(() => {
@@ -30,8 +33,18 @@ startTime = (action) => {
       } 
       if (this.state.seconds <= 60) {
        this.setState({seconds: this.state.seconds + 1})
-      } 
-      
+      }
+      if (this.state.minutes === 60) {
+        this.setState({
+          chill: false,
+          motivation: true})
+        setTimeout(() => { 
+          this.setState({motivation: false})
+         }, 30000);
+      }
+      if (this.state.minutes === 45) {
+        this.setState({chill: true})
+      }
     }, 1)
 }
 
@@ -46,6 +59,9 @@ stopTime = () => {
 }
 
   render() {
+    const videoPlayer = <iframe title="Take a brake" width="420" height="345" src="http://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1" frameBorder="0" allowFullScreen></iframe>;
+    const motivationVideo = <iframe title="1 better than 0" width="560" height="315" src="https://www.youtube.com/embed/_Y_3euC4kxA?autoplay=1" frameBorder="0" allowFullScreen></iframe>;
+    
     return (
       <div className="App">
         <h2> Best Timer For Study </h2>
@@ -53,10 +69,12 @@ stopTime = () => {
         <div className="Timer">
           <span>{this.state.hours}:{this.state.minutes}:{this.state.seconds}</span>
           <ul>
-            <li><button onClick={this.state.timer ? null : this.startTime}>START</button></li>
-            <li><button onClick={this.stopTime}>STOP</button></li>
+            <li><button className="circle-btn" onClick={this.state.timer ? null : this.startTime}>START</button></li>
+            <li><button className="circle-btn" onClick={this.stopTime}>STOP</button></li>
           </ul>
         </div>
+        {this.state.chill ? videoPlayer : null}
+        {this.state.motivation ? motivationVideo : null}
       </div>
     );
   }

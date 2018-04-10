@@ -26,3 +26,24 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+li {
+  float: left;
+  margin-top: 25px;
+}
+
+ul {
+  list-style: none;
+  margin-left: 40%;
+}
+
+.circle-btn {
+  border: 1px solid #ffd700;
+  padding: 25px 25px;
+  border-radius: 25px;
+}
+.circle-btn:hover {
+  color: #fff;
+  background-color: #ffd700;
+  cursor: pointer;
+}
