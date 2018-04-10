@@ -7,7 +7,10 @@ So the idea is:
 - informs user about work time using 30 second motivational music video
 
 HOW TO USE:
-- open application on [Heroku Hosting](https://better-stopwatch-for-study.herokuapp.com/), wait for about 10 seconds for application to appear (because i'm using free of charge heroku). Than press START button and get that work or study done.
+1. Open application on [Heroku Hosting](https://better-stopwatch-for-study.herokuapp.com/) 
+2. Wait for about 10 seconds for application to appear (because i'm using free of charge heroku) 
+3. Press START button and get that work or study done
+4. Make sure your speakers on
 
 ==================================================================================
 
