@@ -1,4 +1,4 @@
-Better stopwatch for study.
+[Better stopwatch for study](https://github.com/facebookincubator/create-react-app)
 
 So the idea is:
 - take a 15 minutes brake every 45 minutes while working or study
