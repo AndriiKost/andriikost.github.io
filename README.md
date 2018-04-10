@@ -1,3 +1,16 @@
+Better stopwatch for study.
+
+So the idea is:
+- take a 15 minutes brake every 45 minutes while working or study
+- helps with motivation and attention
+- informs user about brake using funny music video
+- informs user about work time using 30 second motivational music video
+
+HOW TO USE:
+- open application on [Heroku Hosting](https://better-stopwatch-for-study.herokuapp.com/), wait for about 10 seconds for application to appear (because i'm using free of charge heroku). Than press START button and get that work or study done.
+
+=============================================================================================================================
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
