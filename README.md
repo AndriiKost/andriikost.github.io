@@ -1,14 +1,14 @@
 [Better stopwatch for study](https://better-stopwatch-for-study.herokuapp.com/)
 
 So the idea is:
-- take a 15 minutes brake every 45 minutes while working or study
+- take a 15 minutes break every 45 minutes while working or study
 - helps with motivation and attention
-- informs user about brake using funny music video
-- informs user about work time using 30 second motivational music video
+- informs a user about brake using funny music video
+- tells a user about work time using 30-second motivational music video
 
 HOW TO USE:
 1. Open application on [Heroku Hosting](https://better-stopwatch-for-study.herokuapp.com/) 
-2. Wait for about 10 seconds for application to appear (because i'm using free of charge heroku) 
+2. Wait for about 10 seconds for the application to appear (because I'm using free of charge Heroku)
 3. Press START button and get that work or study done
 4. Make sure your speakers on
 
